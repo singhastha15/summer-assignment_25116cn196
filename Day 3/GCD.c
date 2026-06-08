@@ -8,3 +8,6 @@ int main() {
             gcd = i; // Update gcd to the latest common divisor
         }
     }
+printf("GCD of %d and %d is :%d\n",n1,n2,gcd);
+return 0;
+}
