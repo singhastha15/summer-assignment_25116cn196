@@ -1,0 +1,28 @@
+#include<stdio.h>
+
+int main() {
+    int size, i;
+    int evencount = 0, oddcount = 0;
+
+    printf("Enter the number of elements in the array: ");
+    scanf("%d", &size);
+
+    int arr[size];
+    printf("Enter the elements of the array: ");
+    for(i = 0; i < size; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    for(i = 0; i < size; i++) {
+        if(arr[i] % 2 == 0) {
+            evencount++;
+        } else {
+            oddcount++;
+        }
+    }
+
+    printf("Number of even elements: %d\n", evencount);
+    printf("Number of odd elements: %d\n", oddcount);
+
+    return 0;
+}
